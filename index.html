@@ -1,87 +1,134 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Create stunning video invitations online with InvitoAI. Perfect for weddings, birthdays, baby showers, and more."/>
-  <title>InvitoAI - Custom Video Invitation Templates</title>
+  <meta name="description" content="Learn about InvitoAI's mission to revolutionize video invitations with AI-powered templates for every occasion."/>
+  <title>About Us | InvitoAI</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    /* Reset and Base Styles */
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+    body {
       font-family: 'Roboto', sans-serif;
-      background-color: #f9f9f9;
+      line-height: 1.6;
+      background-color: #f4f4f4;
       color: #333;
     }
+    a {
+      color: #4A90E2;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    /* Container */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      overflow: hidden;
+      padding: 2rem 0;
+    }
+    /* Header */
     header {
       background: linear-gradient(to right, #4A90E2, #357ABD);
       color: #fff;
-      padding: 2rem 1rem;
+      padding: 4rem 0;
       text-align: center;
     }
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      font-size: 3rem;
+      margin-bottom: 1rem;
     }
     header p {
-      margin-top: 0.5rem;
       font-size: 1.2rem;
     }
-    nav {
-      background-color: #fff;
-      padding: 1rem;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      color: #4A90E2;
-      font-weight: bold;
-    }
+    /* Sections */
     section {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      padding: 4rem 0;
     }
-    .features, .templates, .testimonials {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #333;
+    }
+    /* About Section */
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
       gap: 2rem;
     }
-    .feature, .template, .testimonial {
+    .about-text {
+      flex: 1;
+    }
+    .about-image {
+      flex: 1;
+    }
+    /* Features Section */
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .feature {
       background-color: #fff;
-      padding: 1rem;
+      padding: 2rem;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      flex: 1 1 300px;
       text-align: center;
     }
-    .feature img, .template img, .testimonial img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
-    .feature h3, .template h3, .testimonial h3 {
+    .feature h3 {
       margin-top: 1rem;
-      font-size: 1.2rem;
       color: #4A90E2;
     }
+    /* Team Section */
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .team-member {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      flex: 1 1 250px;
+      text-align: center;
+    }
+    .team-member h3 {
+      margin-top: 1rem;
+      color: #4A90E2;
+    }
+    .team-member p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+    /* Footer */
     footer {
       background-color: #333;
       color: #fff;
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 2rem 0;
     }
     footer a {
       color: #4A90E2;
-      text-decoration: none;
     }
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      nav a {
-        display: block;
-        margin: 0.5rem 0;
+    /* Responsive */
+    @media (max-width: 768px) {
+      .about {
+        flex-direction: column;
       }
     }
   </style>
@@ -89,19 +136,29 @@
 <body>
 
   <header>
-    <h1>Welcome to InvitoAI</h1>
-    <p>Create Stunning Video Invitations for Every Occasion</p>
+    <h1>About InvitoAI</h1>
+    <p>Revolutionizing Invitations with AI-Powered Video Templates</p>
   </header>
 
-  <nav>
-    <a href="#features">Features</a>
-    <a href="#templates">Templates</a>
-    <a href="#testimonials">Testimonials</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <section class="container">
+    <h2>Our Story</h2>
+    <div class="about">
+      <div class="about-text">
+        <p>
+          At <strong>InvitoAI</strong>, we believe that every special moment deserves a unique and memorable invitation. Our journey began with a simple idea: to revolutionize the way people invite their loved ones to celebrate life's milestones. Frustrated by the limitations of traditional paper invitations and generic digital options, our founders envisioned a platform that combines creativity, technology, and personalization.
+        </p>
+        <p>
+          Launched in 2023, InvitoAI emerged as a solution for individuals seeking to create stunning, animated video invitations effortlessly. Our mission is to empower users to craft invitations that not only inform but also captivate and delight recipients.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="https://source.unsplash.com/600x400/?celebration,event" alt="Celebration">
+      </div>
+    </div>
+  </section>
 
-  <section id="features">
-    <h2>Our Features</h2>
+  <section class="container">
+    <h2>What We Offer</h2>
     <div class="features">
       <div class="feature">
         <img src="https://source.unsplash.com/400x300/?wedding" alt="Wedding Invitations">
@@ -121,49 +178,28 @@
     </div>
   </section>
 
-  <section id="templates">
-    <h2>Explore Our Templates</h2>
-    <div class="templates">
-      <div class="template">
-        <img src="https://source.unsplash.com/400x300/?invitation" alt="Template 1">
-        <h3>Elegant Floral</h3>
-        <p>A classic floral design perfect for weddings and anniversaries.</p>
+  <section class="container">
+    <h2>Meet Our Team</h2>
+    <div class="team">
+      <div class="team-member">
+        <img src="https://source.unsplash.com/150x150/?person1" alt="Team Member">
+        <h3>Alex Johnson</h3>
+        <p>Founder & CEO</p>
       </div>
-      <div class="template">
-        <img src="https://source.unsplash.com/400x300/?party" alt="Template 2">
-        <h3>Party Vibes</h3>
-        <p>Bright and colorful templates ideal for birthday celebrations.</p>
+      <div class="team-member">
+        <img src="https://source.unsplash.com/150x150/?person2" alt="Team Member">
+        <h3>Maria Rodriguez</h3>
+        <p>Chief Design Officer</p>
       </div>
-      <div class="template">
-        <img src="https://source.unsplash.com/400x300/?babyshower" alt="Template 3">
-        <h3>Sweet Baby</h3>
-        <p>Soft pastel designs tailored for baby showers and announcements.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="testimonials">
-    <h2>What Our Users Say</h2>
-    <div class="testimonials">
-      <div class="testimonial">
-        <img src="https://source.unsplash.com/100x100/?person" alt="User 1">
-        <h3>Sarah K.</h3>
-        <p>"InvitoAI made creating our wedding invitations a breeze. The templates are stunning!"</p>
-      </div>
-      <div class="testimonial">
-        <img src="https://source.unsplash.com/100x100/?woman" alt="User 2">
-        <h3>Emily R.</h3>
-        <p>"I loved the variety of birthday templates. My son's party invite was a hit!"</p>
-      </div>
-      <div class="testimonial">
-        <img src="https://source.unsplash.com/100x100/?man" alt="User 3">
-        <h3>Michael B.</h3>
-        <p>"The baby shower video invitation was adorable. Everyone complimented it!"</p>
+      <div class="team-member">
+        <img src="https://source.unsplash.com/150x150/?person3" alt="Team Member">
+        <h3>Samuel Lee</h3>
+        <p>Lead Developer</p>
       </div>
     </div>
   </section>
 
-  <footer id="contact">
+  <footer>
     <p>Ready to create your own video invitation? Visit <a href="https://invitoai.com" target="_blank" rel="noopener">InvitoAI</a> today!</p>
     <p>&copy; 2025 InvitoAI. All rights reserved.</p>
   </footer>
